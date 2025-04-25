@@ -14,23 +14,28 @@
         }
         header {
             background: #fff;
-            padding: 30px 20px;
-            text-align: center;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        header img {
-            max-width: 120px;
-            margin-bottom: 10px;
+        .header-text {
+            text-align: left;
         }
-        header h1 {
-            margin: 10px 0 5px;
+        .header-text h1 {
+            margin: 0;
             font-size: 28px;
             color: #222;
         }
-        header p {
-            margin: 0;
+        .header-text p {
+            margin: 5px 0 0;
             font-size: 16px;
             color: #777;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
         }
         .container {
             max-width: 800px;
@@ -67,7 +72,7 @@
         .call-button {
             display: inline-block;
             margin-top: 20px;
-            background-color: #28a745;
+            background-color: #007bff;
             color: white;
             padding: 12px 30px;
             border-radius: 30px;
@@ -76,7 +81,7 @@
             transition: background 0.3s;
         }
         .call-button:hover {
-            background-color: #218838;
+            background-color: #0056b3;
         }
         footer {
             text-align: center;
@@ -89,13 +94,34 @@
 <body>
 
 <header>
+    <div class="header-text">
+        <h1>Thuận Phát Decor</h1>
+        <p>Thi công trần, vách thạch cao chuyên nghiệp</p>
+    </div>
     <img src="logo.png" alt="Thuận Phát Decor">
-    <h1>Thuận Phát Decor</h1>
-    <p>Thi công trần, vách thạch cao chuyên nghiệp</p>
 </header>
 
 <div class="container">
     <div class="card">
         <h2>Bảng Giá Thi Công</h2>
         <table>
-            <tr><td>Vách 1 mặt</td><td>230.000đ/m²</
+            <tr><td>Vách 1 mặt</td><td>230.000đ/m²</td></tr>
+            <tr><td>Vách 2 mặt</td><td>300.000đ/m²</td></tr>
+            <tr><td>Trần thạch cao</td><td>270.000đ/m²</td></tr>
+        </table>
+    </div>
+
+    <div class="card contact">
+        <h2>Liên Hệ Ngay</h2>
+        <p>Địa chỉ: Bình Hòa 24, Thuận An, Bình Dương</p>
+        <p>Điện thoại: 0366 722 797</p>
+        <a class="call-button" href="tel:0366722797">Gọi Ngay</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Thuận Phát Decor. All rights reserved.
+</footer>
+
+</body>
+</html>
